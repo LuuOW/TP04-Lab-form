@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+
+        <header>
+            <h1>Encuesta</h1>
+        </header>
+
+        <form action="" method="post">
+            <fieldset class="datos">
+
+                <legend>Datos personales</legend>
+
+                <label for="name">Nombre:
+                <input type="text" maxlength="50" required>
+            </label>
+
+                <label for="email">Email:
+                <input type="email" placeholder="Ej: fulanito@gmail.com" required>
+            </label>
+
+
+                <label for="date">Fecha de nacimiento: 
+                <input type="date" value="01/01/2020">
+            </label>
+
+                <label for="tel">Celular (con codigo de area, sin 0 ni 15): 
+                <input type="tel" minlength="0" maxlength="10">
+            </label>
+
+            </fieldset>
+
+            <fieldset class="carrera">
+
+                <legend>Sobre la carrera</legend>
+
+                <label for="">Indique en la carrera que se inscribio originalmente: 
+                    <select name="" id="">
+                        <option value="">Programador universitario</option>
+                        <option value="">Licenciatura en informatica</option>
+                        <option value="">Ingenieria informatica</option>
+                    </select>
+                </label>
+
+                <label for="">Recursas la carrera? </label>
+                <input type="radio">Si
+                <input type="radio" checked>No
+
+                <label for="">Materias que recursa: </label>
+                <input type="checkbox">Algebra
+                <input type="checkbox">Calculo 1
+                <input type="checkbox" checked>Laboratorio 1
+                <input type="checkbox">Elementos de computacion y logica
+                <input type="checkbox">Otras
+
+            </fieldset>
+
+            <fieldset class="materia">
+
+                <legend>Sobre la materia</legend>
+
+                <legend>Indique el horario de la comision practica que asiste</legend>
+                <label for="">Dia: </label>
+                <select name="" id="">
+                    <option value="">Jueves</option>
+                    <option value="">Viernes</option>
+                </select>
+
+                <label for="">Hora: </label>
+                <input type="time">
+
+                <label for="">Indique el grado de satisfaccion respecto a la materia: (bajo)</label>
+                <input type="range" min="0" max="100" step="5">(mucho)
+
+                <label for="">Del 1 al 10 como calificaria al dictado de la materia</label>
+                <input type="number" value="5">
+
+            </fieldset>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </main>
+</body>
+</html>
